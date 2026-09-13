@@ -15,8 +15,10 @@ helm upgrade -i open-webui open-webui/open-webui \
   --set persistence.storageClass=ceph-block
 ```
 
+http://localhost:8080
+
+Access the Web UI:
 ```bash
 kubectl -n open-webui port-forward svc/open-webui 8080:80
 ```
 
-http://localhost:8080
