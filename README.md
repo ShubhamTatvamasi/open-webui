@@ -12,7 +12,8 @@ helm upgrade -i open-webui open-webui/open-webui \
   --create-namespace \
   --set ollama.enabled=false \
   --set "ollamaUrls[0]=http://ollama.ollama.svc.cluster.local:11434" \
-  --set persistence.storageClass=ceph-block
+  --set persistence.storageClass=ceph-block \
+  --set pipelines.persistence.storageClass=ceph-block
 ```
 
 http://localhost:8080
