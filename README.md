@@ -14,3 +14,9 @@ helm upgrade -i open-webui open-webui/open-webui \
   --set "ollamaUrls[0]=http://ollama.ollama.svc.cluster.local:11434" \
   --set persistence.storageClass=ceph-block
 ```
+
+```bash
+kubectl -n open-webui port-forward svc/open-webui 8080:80
+```
+
+http://localhost:8080
