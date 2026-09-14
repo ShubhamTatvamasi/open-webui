@@ -5,3 +5,13 @@ Download model:
 kubectl -n open-webui exec deploy/open-webui-ollama -- \
   ollama pull qwen3:0.6b
 ```
+
+Check the running processes:
+```bash
+kubectl exec -n open-webui deploy/open-webui-ollama -- ollama ps
+```
+
+```
+NAME          ID              SIZE      PROCESSOR    CONTEXT    UNTIL
+qwen3:0.6b    7df6b6e09427    930 MB    100% GPU     4096       4 minutes from now
+```
