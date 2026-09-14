@@ -13,7 +13,8 @@ helm upgrade -i open-webui open-webui/open-webui \
   --set persistence.storageClass=ceph-block \
   --set pipelines.persistence.storageClass=ceph-block \
   --set ollama.persistentVolume.enabled=true \
-  --set ollama.persistentVolume.storageClass=ceph-block
+  --set ollama.persistentVolume.storageClass=ceph-block \
+  --set ollama.resources.limits."nvidia\.com/gpu"=1
 ```
 
 http://localhost:8080
