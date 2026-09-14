@@ -6,6 +6,11 @@ kubectl -n open-webui exec deploy/open-webui-ollama -- \
   ollama pull qwen3:0.6b
 ```
 
+```
+ollama pull qwen3.8:latest
+ollama pull deepseek-v4.1-flash:cloud 
+```
+
 Check the running processes:
 ```bash
 kubectl -n open-webui exec deploy/open-webui-ollama -- \
