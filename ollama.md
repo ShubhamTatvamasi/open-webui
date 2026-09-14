@@ -8,7 +8,8 @@ kubectl -n open-webui exec deploy/open-webui-ollama -- \
 
 Check the running processes:
 ```bash
-kubectl exec -n open-webui deploy/open-webui-ollama -- ollama ps
+kubectl -n open-webui exec deploy/open-webui-ollama -- \
+  ollama ps
 ```
 
 ```
