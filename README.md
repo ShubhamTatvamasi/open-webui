@@ -15,6 +15,7 @@ helm upgrade -i open-webui open-webui/open-webui \
   --set ollama.persistentVolume.enabled=true \
   --set ollama.persistentVolume.size=100Gi \
   --set ollama.persistentVolume.storageClass=ceph-block \
+  --set ollama.service.type=NodePort \
   --set ollama.ollama.gpu.enabled=true
 ```
 
