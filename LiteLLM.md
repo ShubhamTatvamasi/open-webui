@@ -1,5 +1,5 @@
 # LiteLLM
 
 ```
-litellm.litellm.svc.cluster.local:4000
+http://litellm.litellm.svc.cluster.local:4000
 ```
